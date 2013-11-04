@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>11E53</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CodaScriptPlugIn</string>
+	<key>CFBundleIconFile</key>
+	<string>plug-in</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.panic.CodaScriptPlugIn</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1</string>
+	<key>CodaPlugInMinimumAPIVersion</key>
+	<string>5</string>
+	<key>CodaPlugInSupportedAPIVersion</key>
+	<integer>6</integer>
+	<key>DTCompiler</key>
+	<string></string>
+	<key>DTPlatformBuild</key>
+	<string>4E2002</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>10K549</string>
+	<key>DTSDKName</key>
+	<string>macosx10.6</string>
+	<key>DTXcode</key>
+	<string>0432</string>
+	<key>DTXcodeBuild</key>
+	<string>4E2002</string>
+	<key>NSPrincipalClass</key>
+	<string>CodaScriptPlugIn</string>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>name</key>
+			<string>Run Sketch</string>
+			<key>script</key>
+			<string>run.sh</string>
+			<key>uuid</key>
+			<string>F199FD4E-32ED-4117-A31C-0B08B4FFE577</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>name</key>
+			<string>Present Sketch</string>
+			<key>script</key>
+			<string>present.sh</string>
+			<key>uuid</key>
+			<string>22FF9E24-843C-4A43-BCFB-ED55B7D50CB8</string>
+		</dict>
+		<dict>
+			<key>fallbackInput</key>
+			<string>none</string>
+			<key>name</key>
+			<string>Build Sketch</string>
+			<key>script</key>
+			<string>build.sh</string>
+			<key>uuid</key>
+			<string>BEB389D6-E7E6-4FF1-A0F1-596D693BC949</string>
+		</dict>
+		<dict>
+			<key>children</key>
+			<array>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>name</key>
+					<string>Mac OS X</string>
+					<key>script</key>
+					<string>export-macosx.sh</string>
+					<key>uuid</key>
+					<string>1BC32BC6-4CF9-411F-8741-B6BCAF0161EF</string>
+				</dict>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>name</key>
+					<string>Linux</string>
+					<key>script</key>
+					<string>export-linux.sh</string>
+					<key>uuid</key>
+					<string>F68F8E86-3980-48CC-A83C-4237CE4574B9</string>
+				</dict>
+				<dict>
+					<key>fallbackInput</key>
+					<string>none</string>
+					<key>name</key>
+					<string>Windows</string>
+					<key>script</key>
+					<string>export-windows.sh</string>
+					<key>uuid</key>
+					<string>D9784794-74A3-41CD-B739-D32649B52859</string>
+				</dict>
+			</array>
+			<key>name</key>
+			<string>Export Application</string>
+		</dict>
+	</array>
+</dict>
+</plist>

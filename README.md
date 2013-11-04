@@ -1,2 +1,2 @@
-processing-coda
-===============
+Processing plugin for Coda
+==========================

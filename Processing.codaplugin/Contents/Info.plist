@@ -45,8 +45,14 @@
 		<dict>
 			<key>fallbackInput</key>
 			<string>none</string>
+			<key>keyEquivalent</key>
+			<string>~@r</string>
+			<key>keyEquivalentConflict</key>
+			<false/>
 			<key>name</key>
 			<string>Run Sketch</string>
+			<key>preprocess</key>
+			<string>save</string>
 			<key>script</key>
 			<string>run.sh</string>
 			<key>uuid</key>
@@ -55,8 +61,14 @@
 		<dict>
 			<key>fallbackInput</key>
 			<string>none</string>
+			<key>keyEquivalent</key>
+			<string>$~@r</string>
+			<key>keyEquivalentConflict</key>
+			<false/>
 			<key>name</key>
 			<string>Present Sketch</string>
+			<key>preprocess</key>
+			<string>save</string>
 			<key>script</key>
 			<string>present.sh</string>
 			<key>uuid</key>
@@ -65,8 +77,12 @@
 		<dict>
 			<key>fallbackInput</key>
 			<string>none</string>
+			<key>keyEquivalentConflict</key>
+			<false/>
 			<key>name</key>
 			<string>Build Sketch</string>
+			<key>preprocess</key>
+			<string>save</string>
 			<key>script</key>
 			<string>build.sh</string>
 			<key>uuid</key>
@@ -78,6 +94,8 @@
 				<dict>
 					<key>fallbackInput</key>
 					<string>none</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
 					<key>name</key>
 					<string>Mac OS X</string>
 					<key>script</key>
@@ -88,6 +106,8 @@
 				<dict>
 					<key>fallbackInput</key>
 					<string>none</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
 					<key>name</key>
 					<string>Linux</string>
 					<key>script</key>
@@ -98,6 +118,8 @@
 				<dict>
 					<key>fallbackInput</key>
 					<string>none</string>
+					<key>keyEquivalentConflict</key>
+					<false/>
 					<key>name</key>
 					<string>Windows</string>
 					<key>script</key>

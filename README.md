@@ -16,7 +16,7 @@ History
 -------
 
 ### Version 1.1 - 6 November 2013
-* Added shortcuts to __Build Sketch__ and __Present Sketch__.
+* Added shortcuts to _Build Sketch_ and _Present Sketch_.
 * Now includes a Processing.mode for syntax highlighting.
 
 ### Version 1.0 - 4 November 2013

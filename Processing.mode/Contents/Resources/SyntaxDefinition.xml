@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "syntax.dtd">
+<syntax>
+
+    <head>
+        <name>Processing</name> <!-- The definitions title -->
+        <charsintokens><![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.]]></charsintokens> <!-- Valid Characters for Variables -->
+        <!-- <charsdelimitingtokens></charsdelimitingtokens> -->
+        <folding toplevel="2" />
+    </head>
+
+    <states>
+    
+        <default id="Base" usesymbolsfrommode="Processing" useautocompletefrommode="Processing" scope="meta.default">
+        
+            <keywords id="Keywords" useforautocomplete="yes" scope="keyword.control">
+                <string>break</string>
+                <string>case</string>
+                <string>catch</string>
+                <string>class</string>
+                <string>continue</string>
+                <string>default</string>
+                <string>do</string>
+                <string>else</string>
+                <string>extends</string>
+                <string>false</string>
+                <string>finally</string>
+                <string>for</string>
+                <string>goto</string>
+                <string>if</string>
+                <string>implements</string>
+                <string>import</string>
+                <string>instanceof</string>
+                <string>interface</string>
+                <string>native</string>
+                <string>new</string>
+                <string>null</string>
+                <string>package</string>
+                <string>private</string>
+                <string>protected</string>
+                <string>public</string>
+                <string>return</string>
+                <string>super</string>
+                <string>strictfp</string>
+                <string>switch</string>
+                <string>synchronized</string>
+                <string>this</string>
+                <string>throws</string>
+                <string>throw</string>
+                <string>transient</string>
+                <string>true</string>
+                <string>try</string>
+                <string>while</string>
+                <string>volatile</string>
+			</keywords>
+            <keywords id="TypeKeywords" useforautocomplete="yes" scope="keyword.type">
+                <string>abstract</string>
+                <string>boolean</string>
+                <string>byte</string>
+                <string>char</string>
+                <string>color</string>
+                <string>const</string>
+                <string>double</string>
+                <string>final</string>
+                <string>float</string>
+                <string>int</string>
+                <string>long</string>
+                <string>short</string>
+                <string>static</string>
+                <string>void</string>
+            </keywords>
+            <keywords id="Classes" useforautocomplete="yes" scope="support.class">
+                <string>Array</string>
+                <string>ArrayList</string>
+                <string>BufferedReader</string>
+                <string>FloatDict</string>
+                <string>FloatList</string>
+                <string>HashMap</string>
+                <string>IntDict</string>
+                <string>IntList</string>
+                <string>JSONArray</string>
+                <string>JSONObject</string>
+                <string>Keyboard</string>
+                <string>Object</string>
+                <string>PFont</string>
+                <string>PGraphics</string>
+                <string>PImage</string>
+                <string>PShader</string>
+                <string>PShape</string>
+                <string>PVector</string>
+                <string>PrintWriter</string>
+                <string>String</string>
+                <string>StringDict</string>
+                <string>StringList</string>
+                <string>Table</string>
+                <string>TableRow</string>
+                <string>XML</string>
+            </keywords>
+            <keywords id="Functions" useforautocomplete="yes" scope="support.function">
+                <string>abs</string>
+                <string>acos</string>
+                <string>alpha</string>
+                <string>ambient</string>
+                <string>ambientLight</string>
+                <string>append</string>
+                <string>applyMatrix</string>
+                <string>arc</string>
+                <string>arrayCopy</string>
+                <string>asin</string>
+                <string>atan</string>
+                <string>atan2</string>
+                <string>background</string>
+                <string>beginCamera</string>
+                <string>beginContour</string>
+                <string>beginRaw</string>
+                <string>beginRecord</string>
+                <string>beginShape</string>
+                <string>bezier</string>
+                <string>bezierDetail</string>
+                <string>bezierPoint</string>
+                <string>bezierTangent</string>
+                <string>bezierVertex</string>
+                <string>binary</string>
+                <string>blend</string>
+                <string>blendMode</string>
+                <string>blue</string>
+                <string>boolean</string>
+                <string>box</string>
+                <string>brightness</string>
+                <string>byte</string>
+                <string>camera</string>
+                <string>ceil</string>
+                <string>char</string>
+                <string>clear</string>
+                <string>color</string>
+                <string>colorMode</string>
+                <string>concat</string>
+                <string>constrain</string>
+                <string>copy</string>
+                <string>cos</string>
+                <string>createFont</string>
+                <string>createGraphics</string>
+                <string>createImage</string>
+                <string>createInput</string>
+                <string>createOutput</string>
+                <string>createReader</string>
+                <string>createShape</string>
+                <string>createWriter</string>
+                <string>cursor</string>
+                <string>curve</string>
+                <string>curveDetail</string>
+                <string>curvePoint</string>
+                <string>curveTangent</string>
+                <string>curveTightness</string>
+                <string>curveVertex</string>
+                <string>day</string>
+                <string>degrees</string>
+                <string>directionalLight</string>
+                <string>dist</string>
+                <string>draw</string>
+                <string>ellipse</string>
+                <string>ellipseMode</string>
+                <string>emissive</string>
+                <string>endCamera</string>
+                <string>endContour</string>
+                <string>endRaw</string>
+                <string>endRecord</string>
+                <string>endShape</string>
+                <string>exit</string>
+                <string>exp</string>
+                <string>expand</string>
+                <string>fill</string>
+                <string>filter</string>
+                <string>float</string>
+                <string>floor</string>
+                <string>frameRate</string>
+                <string>frustum</string>
+                <string>get</string>
+                <string>green</string>
+                <string>hex</string>
+                <string>hour</string>
+                <string>hue</string>
+                <string>image</string>
+                <string>imageMode</string>
+                <string>int</string>
+                <string>join</string>
+                <string>keyPressed</string>
+                <string>keyReleased</string>
+                <string>keyTyped</string>
+                <string>lerp</string>
+                <string>lerpColor</string>
+                <string>lightFalloff</string>
+                <string>lightSpecular</string>
+                <string>lights</string>
+                <string>line</string>
+                <string>loadBytes</string>
+                <string>loadFont</string>
+                <string>loadImage</string>
+                <string>loadJSONArray</string>
+                <string>loadJSONObject</string>
+                <string>loadPixels</string>
+                <string>loadShader</string>
+                <string>loadShape</string>
+                <string>loadStrings</string>
+                <string>loadTable</string>
+                <string>loadXML</string>
+                <string>log</string>
+                <string>loop</string>
+                <string>mag</string>
+                <string>map</string>
+                <string>match</string>
+                <string>matchAll</string>
+                <string>max</string>
+                <string>millis</string>
+                <string>min</string>
+                <string>minute</string>
+                <string>modelX</string>
+                <string>modelY</string>
+                <string>modelZ</string>
+                <string>month</string>
+                <string>mouseClicked</string>
+                <string>mouseDragged</string>
+                <string>mouseMoved</string>
+                <string>mousePressed</string>
+                <string>mouseReleased</string>
+                <string>mouseWheel</string>
+                <string>nf</string>
+                <string>nfc</string>
+                <string>nfp</string>
+                <string>nfs</string>
+                <string>noCursor</string>
+                <string>noFill</string>
+                <string>noLights</string>
+                <string>noLoop</string>
+                <string>noSmooth</string>
+                <string>noStroke</string>
+                <string>noTint</string>
+                <string>noise</string>
+                <string>noiseDetail</string>
+                <string>noiseSeed</string>
+                <string>norm</string>
+                <string>normal</string>
+                <string>open</string>
+                <string>ortho</string>
+                <string>parseXML</string>
+                <string>perspective</string>
+                <string>point</string>
+                <string>pointLight</string>
+                <string>popMatrix</string>
+                <string>popStyle</string>
+                <string>pow</string>
+                <string>print</string>
+                <string>printArray</string>
+                <string>printCamera</string>
+                <string>printMatrix</string>
+                <string>printProjection</string>
+                <string>println</string>
+                <string>pushMatrix</string>
+                <string>pushStyle</string>
+                <string>quad</string>
+                <string>quadraticVertex</string>
+                <string>radians</string>
+                <string>random</string>
+                <string>randomGaussian</string>
+                <string>randomSeed</string>
+                <string>rect</string>
+                <string>rectMode</string>
+                <string>red</string>
+                <string>redraw</string>
+                <string>requestImage</string>
+                <string>resetMatrix</string>
+                <string>resetShader</string>
+                <string>reverse</string>
+                <string>rotate</string>
+                <string>rotateX</string>
+                <string>rotateY</string>
+                <string>rotateZ</string>
+                <string>round</string>
+                <string>saturation</string>
+                <string>save</string>
+                <string>saveBytes</string>
+                <string>saveFrame</string>
+                <string>saveJSONArray</string>
+                <string>saveJSONObject</string>
+                <string>saveStream</string>
+                <string>saveStrings</string>
+                <string>saveTable</string>
+                <string>saveXML</string>
+                <string>scale</string>
+                <string>screenX</string>
+                <string>screenY</string>
+                <string>screenZ</string>
+                <string>second</string>
+                <string>selectFolder</string>
+                <string>selectInput</string>
+                <string>selectOutput</string>
+                <string>set</string>
+                <string>setup</string>
+                <string>shader</string>
+                <string>shape</string>
+                <string>shapeMode</string>
+                <string>shearX</string>
+                <string>shearY</string>
+                <string>shininess</string>
+                <string>shorten</string>
+                <string>sin</string>
+                <string>size</string>
+                <string>smooth</string>
+                <string>sort</string>
+                <string>specular</string>
+                <string>sphere</string>
+                <string>sphereDetail</string>
+                <string>splice</string>
+                <string>split</string>
+                <string>splitTokens</string>
+                <string>spotLight</string>
+                <string>sq</string>
+                <string>sqrt</string>
+                <string>str</string>
+                <string>stroke</string>
+                <string>strokeCap</string>
+                <string>strokeJoin</string>
+                <string>strokeWeight</string>
+                <string>subset</string>
+                <string>tan</string>
+                <string>text</string>
+                <string>textAlign</string>
+                <string>textAscent</string>
+                <string>textDescent</string>
+                <string>textFont</string>
+                <string>textLeading</string>
+                <string>textMode</string>
+                <string>textSize</string>
+                <string>textWidth</string>
+                <string>texture</string>
+                <string>textureMode</string>
+                <string>textureWrap</string>
+                <string>tint</string>
+                <string>translate</string>
+                <string>triangle</string>
+                <string>trim</string>
+                <string>unbinary</string>
+                <string>unhex</string>
+                <string>updatePixels</string>
+                <string>vertex</string>
+                <string>year</string>
+            </keywords>
+            <keywords id="Variables" useforautocomplete="yes" scope="language.variable">
+                <string>displayHeight</string>
+                <string>displayWidth</string>
+                <string>focused</string>
+                <string>frameCount</string>
+                <string>frameRate</string>
+                <string>height</string>
+                <string>key</string>
+                <string>keyCode</string>
+                <string>keyPressed</string>
+                <string>mouseButton</string>
+                <string>mousePressed</string>
+                <string>mouseX</string>
+                <string>mouseY</string>
+                <string>pixels[]</string>
+                <string>pmouseX</string>
+                <string>pmouseY</string>
+                <string>width</string>
+                <string>HALF_PI</string>
+                <string>PI</string>
+                <string>QUARTER_PI</string>
+                <string>TAU</string>
+                <string>TWO_PI</string>
+            </keywords>
+            <keywords id="Numbers" useforautocomplete="no" scope="constant.numeric">
+				<regex>(?&lt;![\w\d_])((?:[+-]?(?:(?:[0-9]+\.[0-9]*)|(?:\.[0-9]+))(?:[eE][+\-]?[0-9]+)?[fFlL]?)|(?:(?:(?:[1-9][0-9]*)|0[0-7]*|(?:0[xX][0-9a-fA-F]+))(?:(?:[uU][lL]?)|(?:[lL][uU]?))?))(?![\w\d_])</regex>
+            </keywords>
+            <keywords id="FunctionRegex" useforautocomplete="no" scope="language.function">
+				<regex>([A-Za-z0-9_]+ *)\(</regex>
+            </keywords>
+            <keywords id="Preprocessor" useforautocomplete="no" scope="keyword">
+				<regex>(^[ 	]*import([^\n\r])*)</regex>
+				<regex>(^[ 	]*package([^\n\r])*)</regex>
+            </keywords>
+
+            <state id="Characters" scope="constant.numeric.character">
+                <begin><regex>'(?=(?:\\u[A-Fa-f0-9]{4}'|\\?.'))</regex></begin>
+                <end><regex>(\\u[A-Fa-f0-9]{4}')|(\\'')|(.')</regex></end>
+            </state>
+    
+            <state id="JavadocComment" type="comment" foldable="yes" scope="comment.block.documentation">
+                <begin><regex>/\*\*</regex></begin>
+                <end><regex>\*/</regex></end>
+                <keywords id="JavadocTags" useforautocomplete="no" scope="comment.block.documentation.tags">
+                    <regex>(?&lt;=[^\w\d]|^)(@\w+)</regex>
+                </keywords>
+				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
+            </state>
+    
+            
+            <state id="Comment" type="comment" foldable="yes" scope="comment.block">
+                <begin><regex>/\*</regex></begin>
+                <end><regex>\*/</regex></end>
+				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
+            </state>
+            
+            <state id="SingleComment" type="comment" scope="comment.line">
+                <begin><regex>//</regex></begin>
+                <end><regex>[\n\r]</regex></end>
+				<import mode="Base" state="EmailAndURLContainerState" keywords-only="yes"/>
+            </state>
+            
+            <state id="Strings" type="string" scope="string.double">
+                <begin><regex>"</regex></begin>
+                <end><regex>(?&lt;!\\)(\\\\)*"</regex></end>
+            </state>
+
+            <state id="Block" foldable="yes" scope="meta.block">
+                <begin><regex>{</regex><autoend>}</autoend></begin>
+                <end><regex>}</regex></end>
+                <import />
+            </state>
+
+        </default>
+
+    </states>
+
+</syntax>

@@ -14,6 +14,9 @@ Installation
 
 History
 -------
+### Version 1.2 - 16 January 2014
+* Fixed exporting, now compatible with Processing version 2.1.
+* Now saves all before running a sketch.   
 
 ### Version 1.1 - 6 November 2013
 * Added shortcuts to _Build Sketch_ and _Present Sketch_.

@@ -1,10 +1,13 @@
 #!/bin/bash
-
 folder_path=$(dirname "$CODA_FILEPATH")
 
 osascript <<EOF
 tell application "Terminal" to activate
+try
+tell application "Terminal" to do script "export PS1=''" in selected tab of the front window
+on error
 tell application "Terminal" to do script "export PS1=''"
+end try
 tell application "Terminal" to do script "stty -echo" in selected tab of the front window
 EOF
 
@@ -12,5 +15,4 @@ osascript -e 'tell application "Terminal" to do script "printf \"\\033c\"" in se
 
 osascript <<EOF
 tell application "Terminal" to do script "processing-java --sketch=\"$folder_path\" --output=\"$folder_path/build-tmp\" --present --force" in selected tab of the front window
-tell application "Terminal" to do script "exit" in selected tab of the front window
 EOF
